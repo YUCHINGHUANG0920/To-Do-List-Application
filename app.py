@@ -6,10 +6,17 @@ app = Flask(__name__, static_folder = 'public', static_url_path = '/')
 app.secret_key = 'abcxyz'
 
 
-uri = "mongodb+srv://todos:todos123@mycluster.j02eof1.mongodb.net/?retryWrites=true&w=majority"
-client = pymongo.MongoClient(uri)
-db = client.todolist_system
-todos_collection = db.todos
+### input the personal URI to connect to a MongoDB database hosted on the MongoDB Atlas cloud service
+# uri = "The string is a connection URI (Uniform Resource Identifier)"
+
+### create a MongoDB client object (client) using the pymongo library in Python
+# client = pymongo.MongoClient(uri)
+
+### create a variable named db to represent the MongoDB database (todolist_system)
+# db = client.todolist_system
+
+### creates a variable named todos_collection to represent todos (the name of a collection within the todolist_system database)
+# todos_collection = db.todos
 
 
 

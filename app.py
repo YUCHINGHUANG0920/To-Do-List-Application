@@ -16,7 +16,7 @@ todos_collection = db.todos
 @app.route('/')
 def index():
     todos = todos_collection.find()
-    return render_template('index2.html', items = todos)
+    return render_template('index.html', items = todos)
 
 
 
